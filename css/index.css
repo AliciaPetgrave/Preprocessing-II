@@ -168,16 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+header {
   display: flex;
   align-items: center;
-  padding: 2%;
-  justify-content: flex-end;
+  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-a {
-  color: red;
+nav a {
+  color: #212529;
   text-decoration: none;
-  padding: 2%;
+  font-size: 1.6rem;
+  padding: 10px;
 }
 .footer {
   width: 100%;
