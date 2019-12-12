@@ -4,12 +4,25 @@ header{
     align-items: center;
     padding:10px;
     justify-content: space-between;
-    flex-wrap:wrap;
-}
 
-nav a{
-    color:@shark;
-    text-decoration: none;
-    font-size:1.6rem;
-    padding:10px;
-}
+    h1{
+        @media @mobile{
+            padding:15px;
+        }
+    }
+
+    a{
+        color:@shark;
+        text-decoration: none;
+        font-size:1.6rem;
+        padding:10px;
+
+        @media @mobile{
+            margin:20px;
+        }
+    }
+
+    @media @mobile{
+        flex-direction: column;
+    }
+}//closes header    

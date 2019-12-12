@@ -173,13 +173,27 @@ header {
   align-items: center;
   padding: 10px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
-nav a {
+@media (max-width: 500px) {
+  header h1 {
+    padding: 15px;
+  }
+}
+header a {
   color: #212529;
   text-decoration: none;
   font-size: 1.6rem;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  header a {
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 }
 .footer {
   width: 100%;
@@ -216,6 +230,11 @@ nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
